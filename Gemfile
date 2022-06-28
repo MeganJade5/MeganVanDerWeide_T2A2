@@ -25,8 +25,8 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', require: false
+# # Reduces boot times through caching; required in config/boot.rb
+# gem 'bootsnap', require: false
 gem 'net-smtp'
 
 group :development, :test do
