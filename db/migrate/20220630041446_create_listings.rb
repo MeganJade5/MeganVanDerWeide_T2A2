@@ -6,7 +6,7 @@ class CreateListings < ActiveRecord::Migration[6.1]
       t.string :allergy
       t.integer :price
       t.string :available_date
-      t.boolean :sold
+      t.boolean :sold, default: false
 
       t.timestamps
     end
