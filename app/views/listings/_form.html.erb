@@ -27,8 +27,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :allergy %>
-    <%= form.text_field :allergy %>
+    <%= form.label :allergy_id %>
+    <%= form.select :allergy_id, @allergies.map {|a| [a.name, a.id]} %>
   </div>
 
   <div class="field">
