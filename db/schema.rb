@@ -71,12 +71,13 @@ ActiveRecord::Schema.define(version: 2022_07_01_052614) do
   create_table "listings", force: :cascade do |t|
     t.string "title"
     t.string "cuisine"
-    t.string "allergy"
     t.integer "price"
     t.string "available_date"
     t.boolean "sold", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["allergy_id"], name: "index_listings_on_allergy_id"
+    t.index ["user_id"], name: "index_listings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
