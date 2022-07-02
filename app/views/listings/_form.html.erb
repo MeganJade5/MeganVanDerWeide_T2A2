@@ -36,19 +36,9 @@
     <%= form.text_field :available_date %>
   </div>
 
-  <div class="field">
-    <%= form.label :sold %>
-    <%= form.check_box :sold %>
-  </div>
-
    <div class="field">
     <%= form.label :allergy_id %>
     <%= form.select :allergy_id, @allergies.map {|a| [a.name, a.id]} %>
-  </div>
-
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
   </div>
 
   <div class="actions">
