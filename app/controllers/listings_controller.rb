@@ -2,6 +2,7 @@ class ListingsController < ApplicationController
   before_action :set_listing, only: %i[ show edit update destroy ]
   before_action :set_form_vars, only: %i[new edit]
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :authorize_user, only: [:edit, :update, :destroy]
 
   # GET /listings or /listings.json
   def index
@@ -68,6 +69,14 @@ class ListingsController < ApplicationController
 
     def set_form_vars
       @allergies = Allergy.all
+    end
+
+    # method to check user who owns listing is the logged in user
+    def authorize_user
+      if @listing.user_id != current_user.id
+        flash[:alert] = "we are unable to proceed with that action, please sign in"
+        redirect_to listings_path
+      end
     end
 
 
