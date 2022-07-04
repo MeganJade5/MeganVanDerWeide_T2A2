@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-allergies = ["n/a", "nut free", "gluten free", "Vegan", "shellfish free", "vegetarian", "pork free"]
+allergies = ["nut free", "gluten free", "Vegan", "shellfish free", "vegetarian", "pork free", "N/A"]
 
 if Allergy.count == 0
     allergies.each do |allergy|
