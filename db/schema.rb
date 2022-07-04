@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_03_085451) do
+ActiveRecord::Schema.define(version: 2022_07_04_054931) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -77,6 +77,10 @@ ActiveRecord::Schema.define(version: 2022_07_03_085451) do
     t.boolean "sold", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "allergy_id"
+    t.bigint "user_id"
+    t.index ["allergy_id"], name: "index_listings_on_allergy_id"
+    t.index ["user_id"], name: "index_listings_on_user_id"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -105,6 +109,8 @@ ActiveRecord::Schema.define(version: 2022_07_03_085451) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "listings", "allergies"
+  add_foreign_key "listings", "users"
   add_foreign_key "orders", "listings"
   add_foreign_key "orders", "users", column: "buyer_id"
   add_foreign_key "orders", "users", column: "seller_id"
