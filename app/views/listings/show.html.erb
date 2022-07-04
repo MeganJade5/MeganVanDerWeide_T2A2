@@ -9,8 +9,19 @@
   <% end %>
 </div>
 
+<%# check if item sold, lists sold %>
+<% if @listing.sold %>
+  <p> This is meal has been claimed </p>
+<%# check if current user and that they aren't able to purchase own item %>
+<%= elsif current_user && current_user.id == @listing.user_id %>
+  <p> You posted this meal! And it's yet to be claimed </p>
+<%# current user able to buy meal %>
+<% elsif current_user %>
 <%# buy button %>
-<%= button_to "Get the meal!", place_order_path %>
+  <%= button_to "Get the meal!", place_order_path %>
+<% else %>
+  <p> Please sign in to claim a meal </p>
+<% end %>
 
 <p>
   <strong>Title:</strong>
