@@ -2,6 +2,11 @@
 <%= link_to "Home", listings_path, class: "button" %>
 <%= link_to "About", root_path, class: "button" %>
 
+<span>
+<%= link_to "My Meals Claimed", orders_bought_path, class: "button" %>
+<%= link_to "My Meals Sold/Donated", orders_sold_path, class: "button" %>
+</span>
+
 <span style="float: right">
 <% if user_signed_in? %>
     <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "button button-primary" %>
