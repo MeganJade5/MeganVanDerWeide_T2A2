@@ -51,3 +51,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem "devise", "~> 4.8"
 gem 'nested_form'
+
+gem "aws-sdk-s3", "~> 1.114"
