@@ -33,7 +33,7 @@
         <td><%= listing.available_date %></td>
         <td><%= listing.price %></td>
         <td><%= listing.sold %></td>
-        <td><%= listing.user.address %></td>
+        <td><%= listing.user.address.suburb %></td>
         <td><%= link_to 'View this meal!', listing %></td>
         <%# user see options of edit/destroy if they own the listing %>
         <% if current_user && current_user.id == listing.user_id %>
