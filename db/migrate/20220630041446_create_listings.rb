@@ -7,7 +7,6 @@ class CreateListings < ActiveRecord::Migration[6.1]
       t.string :available_date
       # FIX: address here?
       t.boolean :sold, default: false
-      t.references :allergy, null:false, foreign_key: true
 
       t.timestamps
     end

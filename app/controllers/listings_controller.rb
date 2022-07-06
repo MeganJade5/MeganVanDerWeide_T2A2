@@ -22,6 +22,11 @@ class ListingsController < ApplicationController
   def edit
   end
 
+  # GET search
+  def search
+    @listing = Listing.where("title LIKE?", "%" + params[:q] + "%")
+  end
+
   # POST /listings or /listings.json
   def create
     @listing = current_user.listings.new(listing_params)

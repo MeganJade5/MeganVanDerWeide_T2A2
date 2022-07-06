@@ -49,7 +49,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+# user authenticate/authorise 
 gem "devise", "~> 4.8"
+# connection of user and address for filling out form
 gem 'nested_form'
 
+# aws images
 gem "aws-sdk-s3", "~> 1.114"
