@@ -1,0 +1,13 @@
+.hero-body {
+    background-image: image-url('mainlogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* image height */
+    height: 800px;
+    
+        /* scroll effect for picture */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
