@@ -15,3 +15,15 @@
 .title.no-padding {
     margin-bottom: 0 !important;
 }
+
+#banner-message {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #b0eaee;
+    border-radius: 4px;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.2s;
+    margin: 0 auto;
+    width: 500px;
+}
