@@ -25,7 +25,6 @@
 - Media Queries
 */
 
-
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -160,7 +159,7 @@ p {
 a {
   color: #f49ec8; }
 a:hover {
-  color: #f49ec891; }
+  color: #f1a8cb91; }
 
 
 /* Buttons
