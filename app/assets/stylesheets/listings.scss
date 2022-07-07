@@ -16,7 +16,7 @@
     margin-bottom: 0 !important;
 }
 
-#banner-message {
+.message {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background: #b0eaee;
     border-radius: 4px;
@@ -26,4 +26,17 @@
     transition: all 0.2s;
     margin: 0 auto;
     width: 500px;
+}
+
+.facts {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #f8e6a9;
+    border-radius: 6px;
+    padding: 40px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.2s;
+    margin: 0 auto;
+    width: 950px;
+
 }

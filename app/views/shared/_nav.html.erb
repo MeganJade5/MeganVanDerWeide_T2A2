@@ -1,17 +1,19 @@
 
-<%= link_to "Home", listings_path, class: "button" %>
+<img src="assets/images/logo.png" width="112" height="28">
+
+<%= link_to "Available Meals", listings_path, class: "button" %>
 <%= link_to "About", root_path, class: "button" %>
 
-<span>
 <%= link_to "My Meals Claimed", orders_bought_path, class: "button" %>
 <%= link_to "My Meals Sold/Donated", orders_sold_path, class: "button" %>
-</span>
 
 <span style="float: right">
-<% if user_signed_in? %>
-    <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "button button-primary" %>
-<% else %>
-    <%= link_to "Sign up", new_user_registration_path, class: "button button-primary" %>
-    <%= link_to "Sign in", new_user_session_path, class: "button button-primary" %>
-<% end %>
-</span>
+    <% if user_signed_in? %>
+        <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "button button-primary" %>
+        <%= link_to "Update my profile", edit_user_registration_path, class: "button button-primary" %>
+    <% else %>
+        <%= link_to "Sign up", new_user_registration_path, class: "button button-primary" %>
+        <%= link_to "Sign in", new_user_session_path, class: "button button-primary" %>
+    <% end %>
+    </span>
+</nav>
