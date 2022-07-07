@@ -24,7 +24,7 @@ class ListingsController < ApplicationController
 
   # GET search
   def search
-    @listing = Listing.where("title LIKE?", "%" + params[:q] + "%")
+    @listing = Listing.where("title LIKE?","suburb LIKE?","postcode LIKE?" "%" + params[:q] + "%")
   end
 
   # POST /listings or /listings.json

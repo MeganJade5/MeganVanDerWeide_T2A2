@@ -6,15 +6,31 @@
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
+    border-radius: 5px; /* 5px rounded corners */
     text-align: center;
     font-family: arial;
 }
 
-.title.no-padding {
-    margin-bottom: 0 !important;
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    border-radius: 5px; /* 5px rounded corners */
 }
+
+.container {
+    padding: 2px 16px;
+}
+
+// .listing-container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+//     grid-gap: 2.5rem;
+// }
 
 .message {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

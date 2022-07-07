@@ -6,19 +6,9 @@
       <%# <% if @listing.image.attached? %> %>
           <%# <%= image_tag @listing.image, alt: @listing.title %> %>
       <%# <% else %> %>
-        <%# <%= image_tag "/assets/images/loading.jpg", alt: @listing.title %> %>
+        <%# <img src="/assets/images/loading.jpg", alt: @listing.title %> %> %>
       <%# <% end %> %>
     <%# </div> %>
-
-  <div class="card-image">
-  <figure class="image is-4by3">
-    <% if listing.picture.attached? %>
-    <%= link_to list_path(listing.id) do %>
-    <%= image_tag listing.picture%>
-    <%end%>
-    <% else %>
-    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-    <% end %>
 
     <% @listings.each do |listing| %>
       <span>
