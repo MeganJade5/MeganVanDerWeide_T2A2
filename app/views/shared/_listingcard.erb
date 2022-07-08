@@ -2,15 +2,16 @@
 
   <body>
       <%# user attaching image and if there is none attached %>
-    <%# <div> %>
-      <%# <% if @listing.image.attached? %> %>
-          <%# <%= image_tag @listing.image, alt: @listing.title %> %>
-      <%# <% else %> %>
-        <%# <img src="/assets/images/loading.jpg", alt: @listing.title %> %> %>
-      <%# <% end %> %>
-    <%# </div> %>
+ 
 
     <% @listings.each do |listing| %>
+      <div>
+          <% if listing.image.attached? %>
+              <%= image_tag listing.image, alt: listing.title %>
+          <% else %>
+            <%=image_tag('loading.jpg')%>
+          <% end %>
+        </div>
       <span>
         <h2><%= listing.title %></h2>
         <h5> Cusine: <%= listing.cuisine %> </h5>
