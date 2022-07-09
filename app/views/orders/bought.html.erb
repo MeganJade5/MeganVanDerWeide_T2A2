@@ -5,7 +5,6 @@
 <h3>Here are the meals that you have claimed 🌞 :</h3>
 
 <div class="card">
-
   <body>
     <% @bought_items.each do |item| %>
       <span>
@@ -17,9 +16,12 @@
         <td> Price: $<%= item.listing.price %></td>
         <td> Bought from:<%= item.listing.seller.username %></td>
         <h5> Location picked up: 
+            <%= listing.listing.seller.address.street_number %>,
+            <%= listing.listing.seller.address.street_name %>,
             <%= listing.listing.seller.address.suburb %>,
             <%= listing.listing.seller.address.postcode %></h5>
       </span>
     <% end %>
   </body>
-  </div>
+</div>
+

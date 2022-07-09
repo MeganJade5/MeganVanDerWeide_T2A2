@@ -21,6 +21,8 @@
         <td> Price: $<%= item.listing.price %></td>
         <td> Bought by:<%= item.listing.buyer.username %></td>
         <h5> Location for picked up: 
+            <%= listing.listing.seller.address.street_number %>,
+            <%= listing.listing.seller.address.street_name %>,
             <%= listing.listing.seller.address.suburb %>,
             <%= listing.listing.seller.address.postcode %></h5>
       </span>

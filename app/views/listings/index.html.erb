@@ -12,8 +12,10 @@
 </div>
 
 <p style= "display:flex; justify-content:center; margin:10px;"><%= link_to 'Click here to post a new meal to sell or donate!', new_listing_path, class: "post-button" %></p></br>
-<%= render "shared/listingcard" %>
 
+<section>
+  <%= render "shared/listingcard" %>
+</section>
 </br>
 
 <%= render "shared/footer" %>
