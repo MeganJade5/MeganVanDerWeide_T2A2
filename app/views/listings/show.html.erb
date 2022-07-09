@@ -1,22 +1,4 @@
-<div>
-  <p id="notice"><%= notice %></p>
-
-  <%# check if item sold, lists sold %>
-  <% if @listing.sold %>
-    <h3> This is meal has been claimed: </h3>
-  <%# check if current user and that they aren't able to purchase own item %>
-  <% elsif current_user && current_user.id == @listing.user_id %>
-    <h3> You posted this meal! ...it's yet to be claimed </h3>
-  <%# current user able to buy meal %>
-  <% elsif current_user %>
-  <%# buy button %>
-    <%= button_to "Get the meal!", place_order_path %>
-  <% else %>
-    <p> Please sign in to claim a meal </p>
-  <% end %>
-</div>
-
-<div class="card">
+<div class="card", class="flex-container", class="container">
 
   <div>
     <%# user attaching image and if there is none attached %>
@@ -68,6 +50,24 @@
       <% if current_user.id == @listing.user_id %>
           <%= link_to 'Edit this meals details!', edit_listing_path(@listing), class: "button button-primary" %>
       <% end %>
+
+      <div>
+        <p id="notice"><%= notice %></p>
+
+          <%# check if item sold, lists sold %>
+          <% if @listing.sold %>
+            <h3> This is meal has been claimed: </h3>
+          <%# check if current user and that they aren't able to purchase own item %>
+          <% elsif current_user && current_user.id == @listing.user_id %>
+            <h3> You posted this meal! ...it's yet to be claimed </h3>
+          <%# current user able to buy meal %>
+          <% elsif current_user %>
+          <%# buy button %>
+            <%= button_to "Get the meal!", place_order_path %>
+          <% else %>
+            <p> Please sign in to claim a meal </p>
+          <% end %>
+      </div>
     </div>
 </div>
 

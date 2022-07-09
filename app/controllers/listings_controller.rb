@@ -74,12 +74,12 @@ class ListingsController < ApplicationController
     Order.create(
       listing_id: @listing.id,
       seller_id: @listing.user_id,
-      buyer_id: @current_user.id
+      buyer_id: @current_user_id
     )
 
     @listing.update(sold: true)
 
-    redirect_to orders_success_path
+    redirect_to pages_success_path
   end
 
   private

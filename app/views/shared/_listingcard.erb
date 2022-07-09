@@ -1,33 +1,42 @@
-<div class="card">
+<%# <div class="card", class="flex-container"> %>
+<%# <div class="card", class="flex-container"> %>
 
-  <body>
-      <%# user attaching image and if there is none attached %>
-    <% @listings.each do |listing| %>
-      <div>
-          <% if listing.image.attached? %>
-              <%= image_tag listing.image, alt: listing.title %>
-          <% else %>
-            <%=image_tag('loading.jpg')%>
-          <% end %>
-        </div>
+<section class="listing-form-margin">
+  <div class="section">
+    <br />
+    <div class="container">
+    <%# <body> %>
+        <%# user attaching image and if there is none attached %>
+      <% @listings.each do |listing| %>
+        <div>
+            <% if listing.image.attached? %>
+                <%= image_tag listing.image, alt: listing.title %>
+            <% else %>
+              <%=image_tag('loading.jpg')%>
+            <% end %>
+          </div>
+        <div class="card">
+        <%# <div> %>
+            <h3><%= listing.title %></h3>
+            <h5> Cusine: <%= listing.cuisine %> </h5>
+            <h5><%= listing.description %></h5>
+            <h5> Allergies: <%= listing.allergy.name %></h5>
+            <h5> Date Available: <%= listing.available_date %></h5>
+            <h5> Price: $<%= listing.price %></h5>
+            <h5> Location for pickup: 
+                <%= listing.user.address.suburb %>,
+                <%= listing.user.address.postcode %></h5>
+            <h2 ><%= link_to 'View this meal!', listing, class: "button button-primary"%></h2>
 
-      <div>
-        <h3><%= listing.title %></h3>
-        <h5> Cusine: <%= listing.cuisine %> </h5>
-        <h5><%= listing.description %></h5>
-        <h5> Allergies: <%= listing.allergy.name %></h5>
-        <h5> Date Available: <%= listing.available_date %></h5>
-        <h5> Price: $<%= listing.price %></h5>
-        <h5> Location for pickup: 
-            <%= listing.user.address.suburb %>,
-            <%= listing.user.address.postcode %></h5>
-        <h2 ><%= link_to 'View this meal!', listing, class: "button button-primary"%></h2>
-        <%# user see options of edit/destroy if they own the listing %>
-        <% if current_user && current_user.id == listing.user_id %>
-            <h2><%= link_to 'Edit', edit_listing_path(listing), class: "button" %></h2>
-            <h2><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %></h2>
-        <% end %>
-      </div>
-    <% end %>
-  </body>
+            <div class="container">
+            <%# user see options of edit/destroy if they own the listing %>
+            <% if current_user && current_user.id == listing.user_id %>
+                <h2><%= link_to 'Edit', edit_listing_path(listing), class: "button" %></h2>
+                <h2><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %></h2>
+            <% end %>
+          </div>
+      <% end %>
+    <%# </body> %>
+    </div>
   </div>
+</section>
