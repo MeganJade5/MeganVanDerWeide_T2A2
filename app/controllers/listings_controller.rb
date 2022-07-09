@@ -79,7 +79,7 @@ class ListingsController < ApplicationController
 
     @listing.update(sold: true)
 
-    redirect_to pages_success_path
+    redirect_to order_success_path
   end
 
   private
