@@ -56,6 +56,3 @@ gem 'nested_form'
 
 # aws images
 gem "aws-sdk-s3", "~> 1.114"
-
-# card images
-gem 'bulma-rails', '~> 0.8.0'
