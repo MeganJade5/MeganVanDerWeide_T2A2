@@ -1,6 +1,7 @@
 
 <nav>
-<%=image_tag('logo.png')%>
+<%# logo on top left of nav bar %>
+<%=image_tag('logo.png', class:"logo")%>
 
 <%= link_to "Available Meals", listings_path, class: "button" %>
 <%= link_to "About", root_path, class: "button" %>

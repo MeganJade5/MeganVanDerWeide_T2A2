@@ -1,69 +1,76 @@
-<p id="notice"><%= notice %></p>
+<div>
+  <p id="notice"><%= notice %></p>
 
-<%# check if item sold, lists sold %>
-<% if @listing.sold %>
-  <h3> This is meal has been claimed: </h3>
-<%# check if current user and that they aren't able to purchase own item %>
-<% elsif current_user && current_user.id == @listing.user_id %>
-  <h3> You posted this meal! ...it's yet to be claimed </h3>
-<%# current user able to buy meal %>
-<% elsif current_user %>
-<%# buy button %>
-  <%= button_to "Get the meal!", place_order_path %>
-<% else %>
-  <p> Please sign in to claim a meal </p>
-<% end %>
-
-<div class="flex-container">
-  <%# user attaching image and if there is none attached %>
-  <% if @listing.image.attached? %>
-      <%= image_tag @listing.image, alt: @listing.title %>
+  <%# check if item sold, lists sold %>
+  <% if @listing.sold %>
+    <h3> This is meal has been claimed: </h3>
+  <%# check if current user and that they aren't able to purchase own item %>
+  <% elsif current_user && current_user.id == @listing.user_id %>
+    <h3> You posted this meal! ...it's yet to be claimed </h3>
+  <%# current user able to buy meal %>
+  <% elsif current_user %>
+  <%# buy button %>
+    <%= button_to "Get the meal!", place_order_path %>
   <% else %>
-    <%=image_tag('loading.jpg')%>
+    <p> Please sign in to claim a meal </p>
   <% end %>
+</div>
 
-  <div class="container">
-  <p>
-    <strong>Title:</strong>
-    <%= @listing.title %>
-  </p>
+<div class="card">
 
-  <p>
-    <strong>Cuisine:</strong>
-    <%= @listing.cuisine %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= @listing.description %>
-  </p>
-
-  <p>
-    <strong>Price: $</strong>
-    <%= @listing.price %>
-  </p>
-
-  <p>
-    <strong>Available date:</strong>
-    <%= @listing.available_date %>
-  </p>
-
-  <p>
-    <strong>Allergies listed:</strong>
-    <%= @listing.allergy.name %>
-  </p>
-
-    <p>
-    <strong>Location for Pick Up:</strong>
-      <%= @listing.user.address.suburb %>,
-      <%= @listing.user.address.postcode %></h5>
-  </p>
-
-  <%# user not see options if they don't own the listing %>
-  <% if current_user.id == @listing.user_id %>
-      <%= link_to 'Edit this meals details!', edit_listing_path(@listing), class: "button button-primary" %>
-  <% end %>
+  <div>
+    <%# user attaching image and if there is none attached %>
+    <% if @listing.image.attached? %>
+        <%= image_tag @listing.image, alt: @listing.title %>
+    <% else %>
+      <%=image_tag('loading.jpg')%>
+    <% end %>
   </div>
+
+    <div>
+      <h3>
+        <strong>Title:</strong>
+        <%= @listing.title %>
+      </h3>
+
+      <h5>
+        <strong>Cuisine:</strong>
+        <%= @listing.cuisine %>
+      </h5>
+
+      <h5>
+        <strong>Description:</strong>
+        <%= @listing.description %>
+      </h5>
+
+      <h5>
+        <strong>Price:</strong> $
+        <%= @listing.price %>
+      </h5>
+
+      <h5>
+        <strong>Available date:</strong>
+        <%= @listing.available_date %>
+      </h5>
+
+      <h5>
+        <strong>Allergies listed:</strong>
+        <%= @listing.allergy.name %>
+      </h5>
+
+        <h5>
+        <strong>Location for Pick Up:</strong>
+          <%= @listing.user.address.suburb %>,
+          <%= @listing.user.address.postcode %>
+      </h5>
+
+      <%# user not see options if they don't own the listing %>
+      <% if current_user.id == @listing.user_id %>
+          <%= link_to 'Edit this meals details!', edit_listing_path(@listing), class: "button button-primary" %>
+      <% end %>
+    </div>
 </div>
 
 <%= link_to 'Back', listings_path %>
+
+<%= render "shared/footer" %>

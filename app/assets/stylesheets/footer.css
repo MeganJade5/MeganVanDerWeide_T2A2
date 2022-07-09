@@ -1,5 +1,6 @@
 .footer-text {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    padding: 6rem;
 }

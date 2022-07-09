@@ -1,6 +1,8 @@
-<h1>Hello <%= current_user.username%>!</h1>
+<%=image_tag('3.png', class:"hero-body")%></br>
 
-<h3>Here are the meals that you have claimed:</h3>
+<h1> 👋 Hello <%= current_user.username%>!</h1>
+
+<h3>Here are the meals that you have claimed 🌞 :</h3>
 
 <div class="card">
 
@@ -14,7 +16,7 @@
         <td> Date Claimed:<%= item.listing.available_date %></td>
         <td> Price: $<%= item.listing.price %></td>
         <td> Bought from:<%= item.listing.seller.username %></td>
-        <h5> Location for picked up: 
+        <h5> Location picked up: 
             <%= listing.listing.seller.address.suburb %>,
             <%= listing.listing.seller.address.postcode %></h5>
       </span>

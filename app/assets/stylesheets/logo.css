@@ -1,7 +1,7 @@
 .logo {
     max-width: 100px;
     max-height: 100px;
-    margin: auto;
+    margin: 8px;
     border-radius: 50%;
     /* 5px rounded corners */
 }

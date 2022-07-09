@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tuna</title>
+    <title>Tuna And Rice</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -16,9 +16,6 @@
     <p class="alert"><%= alert %></p>
     <%= yield %>
 
-    <% if Rails.env.development? %>
-      <% console %>
-    <% end %>
   </body>
 
 </html>

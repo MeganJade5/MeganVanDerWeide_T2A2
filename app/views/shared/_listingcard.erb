@@ -2,8 +2,6 @@
 
   <body>
       <%# user attaching image and if there is none attached %>
- 
-
     <% @listings.each do |listing| %>
       <div>
           <% if listing.image.attached? %>
@@ -12,8 +10,9 @@
             <%=image_tag('loading.jpg')%>
           <% end %>
         </div>
-      <span>
-        <h2><%= listing.title %></h2>
+
+      <div>
+        <h3><%= listing.title %></h3>
         <h5> Cusine: <%= listing.cuisine %> </h5>
         <h5><%= listing.description %></h5>
         <h5> Allergies: <%= listing.allergy.name %></h5>
@@ -28,7 +27,7 @@
             <h2><%= link_to 'Edit', edit_listing_path(listing), class: "button" %></h2>
             <h2><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %></h2>
         <% end %>
-      </span>
+      </div>
     <% end %>
   </body>
   </div>

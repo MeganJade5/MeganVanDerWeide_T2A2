@@ -1,6 +1,12 @@
-<h1>Hello <%= current_user.username%>!</h1>
 
-<h3>Here are the meals that you have sold or donated:</h3>
+<%=image_tag('2.png', class:"hero-body")%></br>
+
+<h1> 👋 Hello <%= current_user.username%>!</h1>
+
+<%= link_to 'Click here to post a new meal to sell or donate!', new_listing_path, class: "post-button" %></br>
+
+
+<h3>Here are the meals that you have <strong>sold or donated </strong>to your community 🧑‍🤝‍🧑 :</h3></br>
 
 <div class="card">
 
@@ -21,3 +27,5 @@
     <% end %>
   </body>
   </div>
+
+<p class="message">Thanks for helping out!</p></br>
