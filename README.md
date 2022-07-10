@@ -1,11 +1,12 @@
 <h1>Tuna&Rice</h1>
 
 A Ruby on Rails Marketplace Project - created by: Megan Van Der Weide
-To view in Heroku
 
+To view in Heroku
 Url : https://tuna-and-rice.herokuapp.com/
 
-Github RepositoryUrl : https://github.com/MeganJade5/MeganVanDerWeide_T2A2
+Github Repository
+Url : https://github.com/MeganJade5/MeganVanDerWeide_T2A2
 
 <h2>Instructions to Setup, Configure and Use the App</h2>
 
