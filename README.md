@@ -1,34 +1,34 @@
 <h1>Tuna&Rice</h1>
 
-<p>A Ruby on Rails Marketplace Project - created by: Megan Van Der Weide
-To view in Heroku</p>
-<p>Url : https://tuna-and-rice.herokuapp.com/
-Github RepositoryUrl : https://github.com/MeganJade5/MeganVanDerWeide_T2A2</p>
+A Ruby on Rails Marketplace Project - created by: Megan Van Der Weide
+To view in Heroku
+
+Url : https://tuna-and-rice.herokuapp.com/
+
+Github RepositoryUrl : https://github.com/MeganJade5/MeganVanDerWeide_T2A2
 
 <h2>Instructions to Setup, Configure and Use the App</h2>
 
-<p>Installing Ruby:
+**Installing Ruby:**
 * Ensure Ruby is installed by entering the following command in Terminal: ruby —version
-* If a valid Ruby version is not returned, refer to the following link to install Ruby for your operating system: https://www.ruby-lang.org/en/downloads/<p>
+* If a valid Ruby version is not returned, refer to the following link to install Ruby for your operating system: https://www.ruby-lang.org/en/downloads/
 
-<p>Installing PostgreSQL:
+**Installing PostgreSQL:**
 * Ensure PostgreSQL is installed by entering the following command in Terminal: `psql —version`
 * If a valid version of PostgreSQL is not returned, refer to the link below to install PostgreSQL for your operating system: https://www.postgresql.org/download/
-Downloading the Application:
-Navigate to the GitHub repository as linked above; and
-Either clone or download ZIP of the application.</p>
 
-<p>Installing Gems:
+**Downloading the Application:**
+Navigate to the GitHub repository as linked above; and
+Either clone or download ZIP of the application.
+
+**Installing Gems:**
 * Ensure you have Bundler installed by opening Terminal and entering the following command: bundler —version
 * If Bundler is not installed and an error is returned, enter the following command to install: gem install bundler
 Navigate to the root directory of the application and install the required gems with: `bundle install`</p>
 
-<p>Running the Application on your localhost:
+**Running the Application on your localhost:**
 * Clone the app
-* Ensure you are in the application's root directory and enter the following command to run the application within your browser: `rails s`</p>
-
-
-
+* Ensure you are in the application's root directory and enter the following command to run the application within your browser: `rails s`
 
 <h2>Identification of the problem you are trying to solve by building this particular marketplace app.</h2>
 
