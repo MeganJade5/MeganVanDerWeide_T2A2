@@ -88,7 +88,7 @@ Responsive website design to allow for all screen sizes.
 
 <h2>Sitemap</h2>
 
-![Sitemap](images/../app/assets/images/sitemap.png.png)
+![Sitemap](images/../app/assets/images/sitemap.png)
 
 <h2>Screenshots</h2>
 
@@ -157,11 +157,11 @@ Seller refers to a consumer that uses the application to meals they wish to sell
 
 <em> The following were idealist images using CSS, this was not the final outcome.</em>
 
-![Wireframe](images/../app/assets/images/wire1.png.)
-![Wireframe](images/../app/assets/images/wire2.png.)
-![Wireframe](images/../app/assets/images/wire3.png.)
-![Wireframe](images/../app/assets/images/wire4.png.)
-![Wireframe](images/../app/assets/images/wire5.png.)
+![Wireframe](images/../app/assets/images/wire1.png)
+![Wireframe](images/../app/assets/images/wire2.png)
+![Wireframe](images/../app/assets/images/wire3.png)
+![Wireframe](images/../app/assets/images/wire4.png)
+![Wireframe](images/../app/assets/images/wire5.png)
 
 <h2> ERD - Entity Relationship Diagram </h2>
 
