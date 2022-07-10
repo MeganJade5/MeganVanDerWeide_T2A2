@@ -1,30 +1,31 @@
 <h1>Tuna&Rice</h1>
 
-A Ruby on Rails Marketplace Project - created by: Megan Van Der Weide
-To view in Heroku
-Url : https://tuna-and-rice.herokuapp.com/
-Github RepositoryUrl : https://github.com/MeganJade5/MeganVanDerWeide_T2A2
+<p>A Ruby on Rails Marketplace Project - created by: Megan Van Der Weide
+To view in Heroku</p>
+<p>Url : https://tuna-and-rice.herokuapp.com/
+Github RepositoryUrl : https://github.com/MeganJade5/MeganVanDerWeide_T2A2</p>
 
 <h2>Instructions to Setup, Configure and Use the App</h2>
-Installing Ruby:
-* Ensure Ruby is installed by entering the following command in Terminal: ruby —version
-* If a valid Ruby version is not returned, refer to the following link to install Ruby for your operating system: https://www.ruby-lang.org/en/downloads/
 
-Installing PostgreSQL:
-* Ensure PostgreSQL is installed by entering the following command in Terminal: psql —version
+<p>Installing Ruby:
+* Ensure Ruby is installed by entering the following command in Terminal: ruby —version
+* If a valid Ruby version is not returned, refer to the following link to install Ruby for your operating system: https://www.ruby-lang.org/en/downloads/<p>
+
+<p>Installing PostgreSQL:
+* Ensure PostgreSQL is installed by entering the following command in Terminal: `psql —version`
 * If a valid version of PostgreSQL is not returned, refer to the link below to install PostgreSQL for your operating system: https://www.postgresql.org/download/
 Downloading the Application:
 Navigate to the GitHub repository as linked above; and
-Either clone or download ZIP of the application.
+Either clone or download ZIP of the application.</p>
 
-Installing Gems:
+<p>Installing Gems:
 * Ensure you have Bundler installed by opening Terminal and entering the following command: bundler —version
-If Bundler is not installed and an error is returned, enter the following command to install: gem install bundler
-Navigate to the root directory of the application and install the required gems with: bundle install
+* If Bundler is not installed and an error is returned, enter the following command to install: gem install bundler
+Navigate to the root directory of the application and install the required gems with: `bundle install`</p>
 
-Running the Application on your localhost:
-Clone the app
-Ensure you are in the application's root directory and enter the following command to run the application within your browser: rails s
+<p>Running the Application on your localhost:
+* Clone the app
+* Ensure you are in the application's root directory and enter the following command to run the application within your browser: `rails s`</p>
 
 
 
@@ -87,15 +88,17 @@ Responsive website design to allow for all screen sizes.
 
 <h2>Sitemap</h2>
 
-![Screenshot](screenshot.png)
+![Sitemap](images/../app/assets/images/sitemap.png.png)
 
 <h2>Screenshots</h2>
 
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
+![Screenshot](images/../app/assets/images/screenshot1.png)
+![Screenshot](images/../app/assets/images/screenshot2.png)
+![Screenshot](images/../app/assets/images/screenshot3.png)
+![Screenshot](images/../app/assets/images/screenshot4.png)
+![Screenshot](images/../app/assets/images/screenshot5.png)
+![Screenshot](images/../app/assets/images/screenshot6.png)
+![Screenshot](images/../app/assets/images/screenshot7.png)
 
 <h2>Target audience</h2>
 
@@ -113,54 +116,62 @@ Additionally, the site targets hospitality venues or individual people who want 
 * PostgreSQL
 * Heroku
 * CSS 
-HTML
-Amazon Web Service (S3)
+* HTML
+* Amazon Web Service (S3)
 
 <h2>User stories for your app</h2>
 
 Seller refers to a consumer that uses the application to meals they wish to sell or donate and buyer refers to someone who wishes to purchases or obtain a meal listed by the seller.
 
-As a user I want to be able to view the list of meals for sale, so I can browse and decide if I want to buy or sell
-As a user I want to be able to sign up, so I can buy or sell a meal
-As a user I want to be able to login with my existing account, so that I can enjoy the easy service and repeat my buy or sell action
-*  As a user I want to be able to change password if i've forgotten it, so that I can access my account
-As a user I want to be able to edit my profile to change my details, so that I have relevant personal information (especially location) to buy or sell
-As a user I want to be able to remove my account so there will be no copy of information stored in the website if I no longer want my account
-As a user I want to be able to learn more about (on the about page) how the process of selling or buying/receiving meals works on the application, so that I understand how to use the application
-As a user, I don’t want anyone unauthorised to edit, buy or sell under my profile so that I have security and control over my profile
-As a user I want to have access to edit my profile to update personal information on the site
+* As a user I want to be able to view the list of meals for sale, so I can browse and decide if I want to buy or sell
+* As a user I want to be able to sign up, so I can buy or sell a meal
+* As a user I want to be able to login with my existing account, so that I can enjoy the easy service and repeat my buy or sell action
+* As a user I want to be able to change password if i've forgotten it, so that I can access my account
+* As a user I want to be able to edit my profile to change my details, so that I * have relevant personal information (especially location) to buy or sell
+* As a user I want to be able to remove my account so there will be no copy of information stored in the website if I no longer want my account
+* As a user I want to be able to learn more about (on the about page) how the process of selling or buying/receiving meals works on the application, so that I understand how to use the application
+* As a user, I don’t want anyone unauthorised to edit, buy or sell under my profile so that I have security and control over my profile
+* As a user I want to have access to edit my profile to update personal information on the site
 
 **As a seller:**
-As a user I want to make an account so that my information is associated with all of my actions of selling items
-As a user I want to login in so I can list a meal to sell or donate.
-As a user I want to be able to sell or donate my unused meals so that I can recoup some costs or help others in need
-As a user I want to be able to list my meals with photos, pricing, specifications and information about the ingredients of my meal so that my buyer knows what they’re getting
-As a user I want to view all of my advertisements so that I can see what I have posted onto the application and list mine accordingly
-As a seller, I want to be able to see the prices of other meals, so that I may set an appropriate price for my own
-As a user I don’t want anyone unauthorised to edit/delete or update my listings but me so that I have control over my own profile
+
+* As a user I want to make an account so that my information is associated with all of my actions of selling items
+* As a user I want to login in so I can list a meal to sell or donate.
+* As a user I want to be able to sell or donate my unused meals so that I can recoup some costs or help others in need
+* As a user I want to be able to list my meals with photos, pricing, specifications and information about the ingredients of my meal so that my buyer knows what they’re getting
+* As a user I want to view all of my advertisements so that I can see what I have posted onto the application and list mine accordingly
+* As a seller, I want to be able to see the prices of other meals, so that I may set an appropriate price for my own
+* As a user I don’t want anyone unauthorised to edit/delete or update my listings but me so that I have control over my own profile
 
 **As a buyer:**
-As a user I want to login to order and buy or obtain a meal so that I can utilise the applications service 
-As a user I want to be able to find meals based on location and specific dates so that I can pick up my orders
-As a user I want to be able to filter/search my results based on specific item details of title and/or location so that I can find my desired meal
 
+* As a user I want to login to order and buy or obtain a meal so that I can utilise the applications service 
+* As a user I want to be able to find meals based on location and specific dates so that I can pick up my orders
+* As a user I want to be able to filter/search my results based on specific item details of title and/or location so that I can find my desired meal
+
+<h2> Skeleton Planning </h2>
+
+![Skeleton](images/../app/assets/images/Skeleton.png)
 
 <h2>Wireframes for your app</h2>
 
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
-![Screenshot](screenshot.png)
+<em> The following were idealist images using CSS, this was not the final outcome.</em>
 
-<h2> ERD for your app</h2>
+![Wireframe](images/../app/assets/images/wire1.png.)
+![Wireframe](images/../app/assets/images/wire2.png.)
+![Wireframe](images/../app/assets/images/wire3.png.)
+![Wireframe](images/../app/assets/images/wire4.png.)
+![Wireframe](images/../app/assets/images/wire5.png.)
 
-![Screenshot](screenshot.png)
+<h2> ERD - Entity Relationship Diagram </h2>
+
+![ERD](images/../app/assets/images/ERD.png)
 
 <h2>Explain the different high-level components (abstractions) in your app</h2>
 
 This marketplace is created with Ruby on Rails and the PostgreSQL database. By utilising the model-view-controller (MVC) to create the separation of concerns and applies a API to define which methods are available.
 
-** The database**
+**The database**
 This is used to hold the data within the application. This ensures that the data is kept between sessions. By having a database, information can be saved beyond temporary memory storage which would loose the users data between sessions. The data in the application is saved in the database in rows (records) and columns (attributes) in a spreadsheet form called a table. Some of the tables included are users and address, which store information regarding the users and the users addresses respectively.
 
 **Routes**
@@ -179,7 +190,9 @@ The view displays the interface to users. In this application each webpage has a
 This contains the logic of the program and it connects the model and view, to show information retrieved from the database to the user.
 Controllers are saved in app/controller and are named with the plural of the model it interfaces with. For example if the model is called 'user.rb', the controller would be called ‘users_controller.rb' and the controller is declared, which inherits from ApplicationController. This rule of naming allows the application to have access to its inherited methods and helpers.
 The tasks performed by this controller are passing information regarding groups or individual listings to the relevant views so that they may be displayed to the user.
-——————————————-
+
+---------------------------------------------------------------
+
 Example of the architecture that has been generated to demonstrate different components being used at various stages:
 The User model - a user interacts with this to create an account before they can access the application's features of buying or selling listings. It determines the form for inputing the data to be saved into the database. Once validated by the model, that data is saved into the Users table within the database.
 When the user clicks on a meal listing, the listings controller will accept the ID of the listing as a parameter and pull the meal listing from the database that has matched the parameter. That information is passed from the database, through the controller, to the view where it is displayed to the user.
@@ -191,115 +204,165 @@ Devise gem generated the user model which that handles the authentication of the
 
 
 **Heroku**
-used it to host the application for testing and deployment of app
-container-based cloud Platform as a Service (PaaS)
-to deploy, manage, and scale modern apps
-Is flexible and easy to use
-handles all of the routing through the use of web, worker and one-off dynos. Incoming requests handled by sending them to a load balancer that offers SSL (Secure Socket Layer) termination and returns a success message to the user
-https://www.heroku.com/
+* used it to host the application for testing and deployment of app
+* container-based cloud Platform as a Service (PaaS)
+* to deploy, manage, and scale modern apps
+* Is flexible and easy to use
+* handles all of the routing through the use of web, worker and one-off dynos Incoming requests handled by sending them to a load balancer that offers SSL (Secure Socket Layer) termination and returns a success message to the user
+* https://www.heroku.com/
 
 **GitHub**
 
-hosting service
-command line tool, GitHub provides a Web-based graphical interface
-provides access control and several collaboration features
-Used for version control and project managment 
-https://github.com/
+* hosting service
+* command line tool, GitHub provides a Web-based graphical interface
+* provides access control and several collaboration features
+* Used for version control and project managment 
+* https://github.com/
 
 **AWS S3**
-web-based cloud storage service designed for online backup and archiving of data and applications on Amazon Web Services. 
-is a scalable and high-speed
-Has minimal feature set and created to make web-scale computing easy
-works by creating a 'bucket' on Amazon web services which files can be uploaded to
-used for file uploading images on the site when users add a new listing 
-https://aws.amazon.com/s3/
+* web-based cloud storage service designed for online backup and archiving of data and applications on Amazon Web Services. 
+* is a scalable and high-speed
+* Has minimal feature set and created to make web-scale computing easy
+* works by creating a 'bucket' on Amazon web services which files can be uploaded to
+* used for file uploading images on the site when users add a new listing 
+* https://aws.amazon.com/s3/
 
 **PostgreSQL**
 database used and created by code:
 `rails new project_name -d postgresql`
 
-Free! With no royalties or licensing costs. Therefore there is no restrictions of project scopes and it can be shared as it’s publicly accessible
+* Free! With no royalties or licensing costs. Therefore there is no restrictions of project scopes and it can be shared as it’s publicly accessible
 Open source and developers can develop own modules for the community “Permission to modify, and distribute this software and its documentation for any purpose, without fee and without written agreement” [REFERENCE](https://opensource.org/licenses/postgresql)
-Reliable - Compliant with ACID design principles (atomicity, consistency, isolation and durability). This is to ensure the database transactions are processed reliably. These principles secure PostgreSQLs operations are resilient. This helps protect the system from faults, crashes, failed transactions and unexpected hardware & software interruption.
-Scalable- it allows startups to grow without worrying about switching over to a privatised database system.
-Extensibility - the design allows for the addition of new capabilities or functionality. It includes an extensive library of additional plug-ins for more optimisation
-Has data integrity 
-Well documented and supported by industry professionals 
-It is maintained by skilled developers, therefore stays up to date and improvement are made to the cod
-Features like table inheritance and function overloading
-Built-in security features such as data base file protection. Client connections may be authenticated via external packages. In addition users might be given restricted access according to their assigned to groups privileges  [REFERENCE](https://www.postgresql.org/docs/7.0/security.htm)
+* Reliable - Compliant with ACID design principles (atomicity, consistency, isolation and durability). This is to ensure the database transactions are processed reliably. These principles secure PostgreSQLs operations are resilient. This helps protect the system from faults, crashes, failed transactions and unexpected hardware & software interruption.
+* Scalable- it allows startups to grow without worrying about switching over to a privatised database system.
+* Extensibility - the design allows for the addition of new capabilities or functionality. It includes an extensive library of additional plug-ins for more optimisation
+* Has data integrity 
+* Well documented and supported by industry professionals 
+* It is maintained by skilled developers, therefore stays up to date and improvement are made to the cod
+* Features like table inheritance and function overloading
+* Built-in security features such as data base file protection. Client connections may be authenticated via external packages. In addition users might be given restricted access according to their assigned to groups privileges  [REFERENCE](https://www.postgresql.org/docs/7.0/security.htm)
 
+**Gem - Devise**
+* a flexible authentication solution for Rails
+* used it for authentication: generate the users table in the database, user model, controllers (not in the rails files), and views relating to signing in, registering, and resetting passwords.
+* Function used to make 'current_user' variable available, which makes it much easier to attach other objects such as listings, addresses, and images to a specific user. 'current_user' also be used in displaying different information to different users depending on which user is logged in, ie. meals sold or bought
+* https://github.com/heartcombo/devise
 
-
-**Gems:**
-
-**Devise**
-a flexible authentication solution for Rails
-used it for authentication: generate the users table in the database, user model, controllers (not in the rails files), and views relating to signing in, registering, and resetting passwords.
-Function used to make 'current_user' variable available, which makes it much easier to attach other objects such as listings, addresses, and images to a specific user. 'current_user' also be used in displaying different information to different users depending on which user is logged in, ie. meals sold or bought
-https://github.com/heartcombo/devise
-
-**RSpec**
-Domain Specific Language testing tool used to test Ruby code
+**Gem - RSpec**
+* Domain Specific Language testing tool used to test Ruby code
+  
 <h2> Describe your projects models in terms of the relationships (active record associations) they have with each other</h2>
 
 For all tables, the attributes collected can be viewed in the ERD diagram in the following section:
 
 **user**
-`class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
-
-  has_many :listings
-  belongs_to :address
-  accepts_nested_attributes_for :address
-
-  has_many :sold_orders, foreign_key: "seller_id", class_name: "Order"
-  has_many :bought_orders, foreign_key: "buyer_id", class_name: "Order"`
+`class User < ApplicationRecord`
+  `devise :database_authenticatable, :registerable,`
+         `:recoverable, :rememberable, :validatable`
+  `has_many :listings`
+  `belongs_to :address`
+  `accepts_nested_attributes_for :address`
+  `has_many :sold_orders, foreign_key: "seller_id", class_name: "Order"`
+  `has_many :bought_orders, foreign_key: "buyer_id", class_name: "Order"`
 
 User Model has one to many relation with the Listing model, and belongs to the Address model. This means the User has many listings but belongs to an address. The user also can have many sold and bought orders. The users table exists to store information regarding individual buyers and sellers on the application. The user table was created using the Devise gem and some of the columns were provided by default.
 
 **Listing**
-`class Listing < ApplicationRecord
-  belongs_to :user
-  belongs_to :allergy
-  has_rich_text :description
-  has_one_attached :image
+`class Listing < ApplicationRecord`
+  `belongs_to :user`
+  `belongs_to :allergy`
+  `has_rich_text :description`
+  `has_one_attached :image`
 
-end
-`
 Listing Model has many to one relations which is the `belongs_to`. It has a user and an allergy condition. Its saying that each meal Listing belong to both of these. The listings table holds the details of all the meals that have been listed on the website. The table contains foreign keys for both the users and allergy tables.
 
 **Address**
-`class Address < ApplicationRecord
-    has_one :user
-end`
+`class Address < ApplicationRecord`
+    `has_one :user`
 
 The addresses table exists to store the meal listings address of each user so that buyers know where to pick up the meal. Addresses are associated with users using a foreign key in order to group the address with the sellers profile. 
 
 
 **Order**
-`class Order < ApplicationRecord
-  belongs_to :listing
-  belongs_to :buyer, foreign_key: "buyer_id", class_name: "User"
-  belongs_to :seller, foreign_key: "seller_id", class_name: "User"
-end
-`
+`class Order < ApplicationRecord`
+  `belongs_to :listing`
+  `belongs_to :buyer, foreign_key: "buyer_id", class_name: "User"`
+  `belongs_to :seller, foreign_key: "seller_id", class_name: "User"`
+
 The order table exists to hold information about which meals have been sold. This table holds foreign keys for both the listings, buyer and seller. This allows for the viewer to see what meals they have claimed or sold.
 
 
+<h2>Discuss the database relations to be implemented in your application<h2>
 
-Discuss the database relations to be implemented in your application
-Same as R17
-
-A relational database recognises relationships among sets of data, stored in tables. These tables form the models for the database. The table columns represent the model attributes or fields, while a row represents a record.
-In designing the database, it is important to consider what information is required, how it will be sorted and stored among tables, and how the data can be accessed to accommodate processing and reporting needs. The goal is to optimise database efficiency by reducing redundancy and duplication of data, ensuring data accuracy and integrity, and allowing for extendibility. The process of database normalisation seeks to achieve this by splitting data into smaller tables, where data is not repeated, and linking them through relationships.
-The Entity Relationship Diagram (ERD) below displays how the database for this project has been designed. Data is stored in four separate tables: Users, Books, Adverts and Orders. Data is not duplicated in any of these tables. The Adverts table retrieves the seller's information from the Users table through the foreign key, seller_id, and book information from the Books table through the foreign key, book_id. Likewise, the Orders table draws information about an advert from the Adverts table, through the foreign key, advert_id, and information about the buyer from the Users table through the foreign key, buyer_id.
-
+My goal for the applications database relation was to be efficient in optimising the database through reducing any data duplicates, redundancy, integrity and optimising the possibility of future uses. 
+By recognising the relationships among sets of data, stored in tables I was able to form a relational database. This design considered information that the application needed for its purpose and how this data would be stored and/or sorted for easy access. My process of normalisation was to split up the data into smaller tables ie. allergy/user/listing/order to link them with their relationships. 
+Each table stores data that is relatable to other tables through foreign keys. Such as the order table draws from the foreign key of seller_id from the user_id. 
+The following Entity Relationship Diagram below displays the database design: 
 
 
-<h2>Provide your database schema design</h2>
+<h2>Describe the way tasks are allocated and tracked in your project</h2>
 
-![Screenshot](screenshot.png)
+It was important to me to plan, develop, implement and polish my project through the use of Trello boards. In addition I kept track of my workflow through the use of extended branches for each feature. Firstly my development fazes were placed on a seperate branch to the master branch for best practice. Secondly I followed a process of development as followed; I created a feature branch, I then implemented the features code, then merged this feature branch into the development branch and deleted the feature branch. Upon completion I merged the development branch with the master branch. In addition I implemented the same process with the Heroku app, only it was a staging platform before going to production. 
+
+**Stage 1. Planning**
+The first tasks completed were those involved in the planning stage of the project, including:
+* The purpose of my application idea
+* Why is this a problem that needs solving?
+* User stories
+* My applications skeleton 
+* Wireframes
+* Sitemap 
+* ERD - what are the relationships between tables
+* Consider the dependencies of each feature on other features.
+
+Once these steps were completed and the foundation of the app was determined, the next faze of the rail project commended; coding with rails. 
+
+**Stage 2. Developing the database**
+Code was created for:
+* generating the database migrations
+* writing the associations in models
+
+**Stage 3. Seeding the database**
+This was to form the data in the allergy table and implement user options when filling out the form for the meal listing. 
+
+**Stage 4. Basic features**
+Development of basic CRUD functionality for listings and users. This was the creation of routes, controllers, and views.
+
+**Stage 5. Authorisation features**
+Authorisation features were implemented by providing logic in the controller to avoid any fraudulent information to the website.
+This aimed to implement the following;
+* users cannot edit or delete listings which are not theirs
+* users cannot edit or delete listings which have been purchased
+* users cannot access or edit profiles which are not theirs
+
+This was achieved my comparing the user idea of the listing with the current users id. The user was unable to see any options of editing or deleting any listed meal that was not their own. In addition the user was redirected to log in if they were to access a page that required a user id, ie. creating a listing.
+The user is prevented from accessing any profile page that is not their own. By using the devise logic all data that loads is related to the current_user. No user can ever see a profile (or access the edit functionality) that is not theirs.
+
+**Stage 3. Testing**
+Testing involved making sure the following were possible:
+* a user could be created
+* an address could be associated with a user
+* a listing could be created
+* a listing could be associated with a user and the sellers address
+* an image could be associated with a listing
+* a purchase could be created
+* a purchase could be associated with a buyer and seller
+
+**Stage 6. Advanced features**
+Once basic features were complete, I added an advanced feature a search option. 
+Search was implemented by using a form to send params to the controller, which would then redirect back to the same page. There was then code on the view to display certain information only if there were params which corresponded to the search.
+The search bar allows for filtering of the title and location. It could be extended in future by adding a price as a filter option. 
+
+**Stage 7. Polish**
+Once the application functioned, the following was tackled:
+* styling with CSS
+* DRYing up the controllers by creating instance methods in the models
+* Image uploads using AWS
+
+**Tasks were tracked using trello (see images below):**
+![Screenshot](images/../app/assets/images/trello1.png)
+![Screenshot](images/../app/assets/images/trello2.png)
+![Screenshot](images/../app/assets/images/trello3.png)
+![Screenshot](images/../app/assets/images/trello4.png)
+![Screenshot](images/../app/assets/images/trello5.png)
+![Screenshot](images/../app/assets/images/trello6.png)
