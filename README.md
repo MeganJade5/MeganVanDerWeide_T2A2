@@ -1,4 +1,4 @@
-<h1>Tuna&Rice</h1>
+<h1>Tuna and Rice</h1>
 
 A Ruby on Rails Marketplace Project - created by: Megan Van Der Weide
 
