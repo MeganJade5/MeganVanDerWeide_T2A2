@@ -297,7 +297,6 @@ The order table exists to hold information about which meals have been sold. Thi
 My goal for the applications database relation was to be efficient in optimising the database through reducing any data duplicates, redundancy, integrity and optimising the possibility of future uses. 
 By recognising the relationships among sets of data, stored in tables I was able to form a relational database. This design considered information that the application needed for its purpose and how this data would be stored and/or sorted for easy access. My process of normalisation was to split up the data into smaller tables ie. allergy/user/listing/order to link them with their relationships. 
 Each table stores data that is relatable to other tables through foreign keys. Such as the order table draws from the foreign key of seller_id from the user_id. 
-The following Entity Relationship Diagram below displays the database design: 
 
 
 <h2>Describe the way tasks are allocated and tracked in your project</h2>
