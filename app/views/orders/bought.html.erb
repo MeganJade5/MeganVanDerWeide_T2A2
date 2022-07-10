@@ -7,6 +7,14 @@
 <div class="card">
   <body>
     <% @bought_items.each do |item| %>
+      <div>
+      <%# user attaching image and if there is none attached %>
+        <% if item.listing.image.attached? %>
+          <%= image_tag item.listing.image, alt: item.listing.title %>
+        <% else %>
+          <%=image_tag('loading.jpg')%>
+        <% end %>
+      </div>
       <span>
         <td><%= item.listing.title %></td>
         <td> Cusine:<%= item.listing.cuisine %></td>
@@ -14,12 +22,12 @@
         <td> Allergies: <%= item.listing.allergy.name %></td>
         <td> Date Claimed:<%= item.listing.available_date %></td>
         <td> Price: $<%= item.listing.price %></td>
-        <td> Bought from:<%= item.listing.seller.username %></td>
+        <td> Bought from:<%= item.listing.user.username %></td>
         <h5> Location picked up: 
-            <%= listing.listing.seller.address.street_number %>,
-            <%= listing.listing.seller.address.street_name %>,
-            <%= listing.listing.seller.address.suburb %>,
-            <%= listing.listing.seller.address.postcode %></h5>
+            <%= item.listing.user.address.street_number %>,
+            <%= item.listing.user.address.street_name %>,
+            <%= item.listing.user.address.suburb %>,
+            <%= item.listing.user.address.postcode %></h5>
       </span>
     <% end %>
   </body>
