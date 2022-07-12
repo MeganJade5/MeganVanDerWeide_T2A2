@@ -360,6 +360,11 @@ Once the application functioned, the following was tackled:
 * Image uploads using AWS
 
 **Tasks were tracked using trello (see images below):**
+
+
+To view on Trello
+Url : https://trello.com/b/tnxwdj0q/marketplace-app-tuna-and-rice
+
 ![Screenshot](images/../app/assets/images/trello1.png)
 ![Screenshot](images/../app/assets/images/trello2.png)
 ![Screenshot](images/../app/assets/images/trello3.png)
